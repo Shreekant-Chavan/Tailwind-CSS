@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taolwind CSS</title>
+    <title>Tailwind CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="underline ml-4 p4">Hello World!</h1>
-    <h2>Hello World!</h2>
-    <h3>Hello World!</h3>
+    <div class="m-20 mx-44 flex flex-wrap border-2 border-black rounded-lg">
+        <div class="bg-gradient-to-r from-sky-500 to-indigo-500 h-24 text-white flex justify-center items-center font-bold text-4xl w-full round border-t">News you can Trust.
+        </div>
+    <div class="text-center m-10 w-full">
+        <h4 class="font-bold text-lg">Stay up to date with the Latest!</h4>
+        <p class="font-medium">Subscribe to newsletter for the latest news straight into your inbox.</p>
+        <form class="flex flex-wrap" action="action.php">
+            <label for="email"></label>
+            <input class="w-full mx-72 bg-slate-200 rounded placeholder:text-center text-base my-2 py-1.5" placeholder="your@email.com" type="email" name="email" id="email">
+            <button class="w-full mx-96 py-1.5 rounded-full bg-blue-500 text-white">Subscribe Now</button>
+        </form>
+        <p class="m-6 text-xs">We Value your Privacy</p>
+    </div>
+    </div>
 </body>
 </html>
